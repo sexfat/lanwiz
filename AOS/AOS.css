@@ -1,0 +1,10 @@
+.top_block, .bottom_block{
+    height: 1000px;
+    border: 1px solid gray;
+    background-color: lightgray;
+  }
+  
+  div.custom_block{
+    border: 1px solid red;
+    background-color: red;
+  }
