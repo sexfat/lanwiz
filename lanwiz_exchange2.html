@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <link rel="stylesheet" href="./css/index_rwd.css">
+    <link rel="stylesheet" href="./css/exchange2_rwd.css">
 
   </head>
 
@@ -29,6 +29,11 @@
         <nav class="menu">
             <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
             <div class="menu-logo"><img class="menu-logo" src="./picture/logo-green-border.png"></div>
+            <div class="language-switch">
+              <h1>English</h1>
+              <span class="triangle1"></span>
+            </div>
+            
             <ul id="menuUl" class="active">
               <li><a>Log in</a></li>
                 <li><a href="./lanwiz_about.html" class="link_style">About Us</a></li>
@@ -41,12 +46,18 @@
             <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
           
             <ul id="menuUl" class="active">
-              <li><a>Log in</a></li>
-                <li><a href="./lanwiz_about.html" class="link_style">About Us</a></li>
-               <li> <a href="./lanwiz_blog.html" class="link_style">Blog</a></li>
-              <li><a href="./lanwiz_discussion.html" class="link_style">Discussion</a></li>
-                <li class="current-active"><a href="./lanwiz_exchange.html" class="link_style">Find a Partner</a></li>
+              <li><a>Speciaty</a></li>
+                <li><a href="./lanwiz_about.html" class="link_style">Also Speaks</a></li>
+               <li> <a href="./lanwiz_blog.html" class="link_style">From</a></li>
+
             </ul>
+            <div class="search-partner-input">
+              <div class="search-partner-input-btn">
+                <img src="./picture/icon/search.png" alt="search icon">
+              </div>
+                <input id="search-partner-skills" placeholder="Search by Name or Keywords" value>
+            </div>
+      
         </nav>
 
         <script src="./js/lanwiz_exchange2.js"></script>
@@ -58,15 +69,14 @@
     <!-- search outcome -->
     <div class="search-results">
       <span>
-        <strong>1,237</strong>
-        Partner Found
+        1,237 Partner Found
       </span>
     </div>
 
     <div class="partner-card-container">
       <div class="cards" id="partner1">
-        <div class="cards-left" style="padding-left:32px;">
-          <div class="cards-detail-top">
+        <div class="cards-left">
+          <div class="cards-left-detail">
             <div class="new-avatar">  
               <span class="ant-avatar-icon">
                 <img src="./picture/people/14.png">
@@ -76,7 +86,7 @@
               </div>
             </div>
 
-            <div class="partner-card-information" style="margin-left: 45px;">
+            <div class="new-avatar-information">
               <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
                 <span>Anne</span>
               </h1>
@@ -126,8 +136,8 @@
       </div>
 
       <div class="cards" id="partner1">
-        <div class="cards-left" style="padding-left:32px;">
-          <div class="cards-detail-top">
+        <div class="cards-left">
+          <div class="cards-left-detail">
             <div class="new-avatar"> 
               <span class="ant-avatar-icon">
                 <img src="./picture/people/5.png">
@@ -137,7 +147,7 @@
               </div>
             </div>
 
-            <div class="partner-card-information" style="margin-left: 45px;">
+            <div class="new-avatar-information" style="margin-left: 45px;">
               <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
                 <span>Meg</span>
               </h1>
@@ -168,18 +178,18 @@
         </div>
 
         <div class="cards-right">
-            <div class="partner-card-tabs">
-              <div class="partner-card-tab">
-                <p>
-                  <span class="video">Video</span>
-                </p>
-              </div>
-              <div class="partner-card-tab">
-                <p>
-                  <span>Intro</span>
-                </p>
-              </div>
-              <div class="partner-card-tab-active"></div>
+          <div class="partner-card-tabs">
+            <div class="partner-card-tab">
+              <p>
+                <span class="video">Video</span>
+              </p>
+            </div>
+            <div class="partner-card-tab">
+              <p>
+                <span>Intro</span>
+              </p>
+            </div>
+            <div class="partner-card-tab-active"></div>
           </div>
           <div class="video-player">
             <img src="./picture/video/1.jpg" alt="poster">
@@ -189,7 +199,7 @@
 
       <div class="cards" id="partner1">
         <div class="cards-left" style="padding-left:32px;">
-          <div class="cards-detail-top">
+          <div class="cards-left-detail">
             <div class="new-avatar">  
               <span class="ant-avatar-icon">
                 <img src="./picture/people/6.png">
@@ -199,7 +209,7 @@
               </div>
             </div>
 
-            <div class="partner-card-information" style="margin-left: 45px;">
+            <div class="new-avatar-information" style="margin-left: 45px;">
               <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
                 <span>David</span>
               </h1>
@@ -250,7 +260,7 @@
 
       <div class="cards" id="partner1">
         <div class="cards-left" style="padding-left:32px;">
-          <div class="cards-detail-top">
+          <div class="cards-left-detail">
             <div class="new-avatar"> 
               <span class="ant-avatar-icon">
                 <img src="./picture/people/7.png">
@@ -260,7 +270,7 @@
               </div>
             </div>
 
-            <div class="partner-card-information" style="margin-left: 45px;">
+            <div class="new-avatar-information" style="margin-left: 45px;">
               <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
                 <span>Jack</span>
               </h1>
@@ -311,7 +321,7 @@
 
       <div class="cards" id="partner1">
         <div class="cards-left" style="padding-left:32px;">
-          <div class="cards-detail-top">
+          <div class="cards-left-detail">
             <div class="new-avatar"> 
               <span class="ant-avatar-icon">
                 <img src="./picture/people/8.png">
@@ -321,7 +331,7 @@
               </div>
             </div>
 
-            <div class="partner-card-information" style="margin-left: 45px;">
+            <div class="new-avatar-information" style="margin-left: 45px;">
               <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
                 <span>Jane</span>
               </h1>
@@ -372,7 +382,7 @@
 
       <div class="cards" id="partner1">
         <div class="cards-left" style="padding-left:32px;">
-          <div class="cards-detail-top">
+          <div class="cards-left-detail">
             <div class="new-avatar">  
               <span class="ant-avatar-icon">
                 <img src="./picture/people/9.png">
@@ -382,7 +392,7 @@
               </div>
             </div>
 
-            <div class="partner-card-information" style="margin-left: 45px;">
+            <div class="new-avatar-information" style="margin-left: 45px;">
               <h1 calss="David" style="color: rgba(51, 51, 51;);  margin-bottom: 5px; ont-size: 23px; font-weight: 400;">
                 <span>Mike</span>
               </h1>

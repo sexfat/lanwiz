@@ -18,7 +18,6 @@ body{
 .menu {
     z-index: 10;
     position: fixed;
-   
      /* border: 1px solid red; */
     width: 100%;
     /* height: 70px; */
@@ -30,10 +29,10 @@ body{
     z-index: 9;
     /* position: fixed; */
     position: relative;
-    top: 52px;
+    top: 64px;
      border: 1px solid red;
     width: 100%;
-    
+    padding-left: 2%;
     display: flex;
     background: #fff;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
@@ -48,14 +47,14 @@ body{
    float: right;
     list-style: none;
     font-size: 16px;
-   margin: 10px;
+   margin: 16px;
     margin-left: 12px;
     padding: 6px 6px 6px 10px;
 }
 
 .menu2 li {
-    border: 1px solid gray;
-    border-radius: 5px;
+    border: 1px solid rgb(173, 171, 171);
+    border-radius: 10px;
    float: left;
     list-style: none;
     font-size: 16px;
@@ -81,6 +80,31 @@ body{
 .menu .menu-logo a {
     color: #fff;
 }
+.language-switch{
+  width: 10%;
+  display: flex;
+  border: 1px solid red;
+  margin-left: 7%;
+}
+.language-switch>h1{
+  display: flex;
+  /* position: relative; */
+  margin: auto;
+  border: 1px solid red;
+  color: grey
+}
+.language-switch>span.triangle1{
+  display: flex;
+  margin: auto;
+  margin-left: 3%;
+  border: 10px solid red;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid rgb(148, 148, 148);
+  border-bottom: 8px solid transparent;
+  width:0px;
+  height:0px;
+}
 
 .menu a:hover, .menu  {
     text-decoration: none;
@@ -91,7 +115,42 @@ body{
     display: none;
     /* z-index: 9; */
 }
+.search-partner-input {
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+.search-partner-input-btn{
+  background: linear-gradient(270deg,#64d4b8,#17ad99);
+  width: 44px;
+  height: 38px;
+  line-height: 64px;
+  text-align: center;
+  border-left: 1px solid #e9e9eb;
+  border: 1px solid blue;
+  border-radius: 10px 0 0 10px;
 
+}
+.search-partner-input-btn {
+  display: flex;
+}
+.search-partner-input-btn img {
+  width:24px;
+  height:24px;
+  cursor: pointer;
+  border-radius: 10px 0 0 10px;
+  margin-top: 8px;
+  margin-left: 12px;
+}
+.search-partner-input input {
+  border: 1px solid green;
+  width: 200px;
+  height: 38px;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 0 10px 10px 0;
+}
 
 /* 
 
@@ -168,26 +227,36 @@ body{
     border-radius: 0 10px 10px 0;
   }
    */
+
+   .search-results{
+    position: relative;
+    z-index: -100;
+    width: 100%;
+    margin-top: 11%;
+    margin-bottom: 20px;
+    border: 1px solid orange;
+  }
+  .search-results>span{
+    display: block;
+    border: 1px solid blue;
+    text-align: center;
+  }
+  
+
    .partner-card-container{
     position: relative;
     z-index: -100;
-    /* border: 1px solid red; */
-    margin-top: 220px;
-   
+    border: 1px solid red;
+    /* margin-top: 10%;*/
     width: 100%;
     /* padding-top: 100px; */
     transition: margin 0.2s ease 0s;
     /* border: 1px solid red; */
   }
-  .search-results{
-    position: absolute;
-    z-index: -100;
-    top: 170px;
-    left: 20%;
-    /* border: 1px solid orange; */
-  }
+  
   .cards{
-      /* border: 1px solid green; */
+    width: 70%;
+      border: 6px solid green;
       /* position: relative; */
       margin-left: 50%;
       transform: translateX(-50%);
@@ -195,21 +264,24 @@ body{
       margin-bottom: 20px;
   }
   .cards-left{
+    border: 2px solid purple;
       position: relative;
-      width: 564px;
-      min-height: 284px;
+      width: 60%;
+      
       box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 25px 0px;
       cursor: pointer;
-      padding: 25px 25px 20px;
+      padding: 25px;
       border-radius: 6px;
       background: rgb(255, 255, 255);
   }
   
-  .cards-detail-top{
+  .cards-left-detail{
+    border: 2px solid yellow;
     display: flex;
   }
   
   .ant-avatar-icon>img {
+    border: 2px solid black;
       margin-top: 20px;
       display: block;
       width: 100%;
@@ -248,11 +320,12 @@ body{
     background: url(./picture/icon/location_icon.svg) no-repeat 50%/18px 10px;
   }
   
-  .partner-card-information{
+  .new-avatar-information{
     position: relative;
-    /* border: 1px solid green; */
+    margin: 0 auto;
+    border: 1px solid green;
   }
-  .partner-card-information h1 {
+  .new-avatar-information h1 {
     
       margin-right: 0;
       margin-bottom: 5px;
@@ -272,7 +345,7 @@ body{
     height: 30px;
   
   }
-  .partner-card-information p {
+  .new-avatar-information p {
       font-family: -apple-system;
       font-size: 14px;
       font-weight: 300;
@@ -281,8 +354,9 @@ body{
       /* text-transform: uppercase; */
   }
   .cards-right{
+    border: 2px solid blue;
       position: relative;
-      width: 386px;
+      width: 40%;
       box-shadow: rgba(0, 0, 0, 0.1) 5px 7px 25px 0px;
       padding: 25px 20px 20px;
       border-radius: 0px 6px 6px 0px;
