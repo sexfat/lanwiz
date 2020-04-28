@@ -14,11 +14,12 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .menu {
     z-index: 10;
-    position: fixed;
+    /* position: fixed; */
      /* border: 1px solid red; */
     width: 100%;
     /* height: 70px; */
@@ -30,7 +31,7 @@ body{
     z-index: 9;
     /* position: fixed; */
     position: relative;
-    top: 64px;
+    /* top: 64px; */
      border: 1px solid red;
     width: 100%;
     padding-left: 2%;
@@ -231,10 +232,10 @@ body{
 
    .search-results{
    
-    /* position: relative; */
-    z-index: -100;
+    position: relative;
+    z-index: 1;
     width: 100%;
-    /* margin-top: 11%; */
+    margin-top: 140px;
     margin-bottom: 20px;
     border: 1px solid orange;
   }
@@ -248,7 +249,7 @@ body{
 
    .partner-card-container{
     position: relative;
-    z-index: -100;
+    z-index: 1;
     border: 1px solid red;
     /* margin-top: 10%;*/
     width: 100%;
@@ -342,7 +343,7 @@ body{
     position: absolute;
     /* border-radius: 50%; */
     top: 6px;
-    left: 120px;
+    left: 62%;
     margin: 0;
     width: 40px;
     height: 30px;
@@ -461,8 +462,8 @@ body{
   .show-more-btn{
     /* border: 1px solid green; */
     display: inline-block;
-    margin-top: 60px;
-    margin-bottom: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 50%;
     transform: translateX(-50%);
     /* margin-bottom: 80px; */
@@ -491,14 +492,14 @@ body{
 
 
 .wrapper-style{
-    background-attachment: scroll;
+    /* background-attachment: scroll; */
     width: 100%;
     text-align: center;
     border: 2px solid blue;
     color: white;
-    background-image: url(../picture/1.jpg);
+    background-image: url(../picture/people/man_laptop3.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
 
 }
