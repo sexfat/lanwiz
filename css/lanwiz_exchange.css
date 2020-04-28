@@ -328,6 +328,7 @@ ul.nav_list_right>li {
   /* border: 1px solid red; */
 }
 .search-results{
+  font-size: 50px;
   position: absolute;
   top: 170px;
   left: 20%;

@@ -33,12 +33,12 @@ body{
 /*the menu nav bar start ------->*/
 
 .menu {
-    z-index: 10;
+    z-index: 1000;
     position: fixed;
     top: 0;
      border: 1px solid red;
     width: 100%;
-    height: 8%;
+    /* height: 8%; */
     display: flex;
     background: #272626; opacity: 0.8;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
@@ -53,7 +53,8 @@ body{
    float: right;
     list-style: none;
     font-size: 16px;
-   margin: 0 auto;
+   /* margin: 0 auto; */
+   margin: 12px;
     margin-left: 12px;
     padding: 6px 6px 6px 10px;
 }
@@ -377,9 +378,14 @@ span.homepage-search-icon>img{
     height: 500px;
     border: 1px solid black;
 } */
+.homepage-partners-slider-container{
+    border: 5px solid grey;
+    /* width: 95%; */
+    margin: 0 auto;
 
+}
 .homepage-partners-slider-container>h1 {
-    /* border: 1px solid red; */
+    border: 10px solid red;
     padding: 0 20px;
     margin: 30px 0;
     font-size: 40px;
@@ -649,6 +655,7 @@ section.reviews{
     border: 1px solid red;
 }
 .review-container>h1{
+    border: 1px solid blue;
     margin: 30px 0;
     font-size: 40px;
     text-align: center;
@@ -664,23 +671,35 @@ section.reviews{
 .student-item{
     border: 1px solid green;
     position: relative;
+    
     margin: 1% 1.5% 1%;
    display: flex;
     width: 33.3333333333%;
     min-height: 400px;
+    height: auto;
     border-radius: 6px;
     box-shadow: 0 5px 20px 0 rgba(0,0,0,.1);
     overflow: hidden;
 }
 .student-item>.details{
-   
-    border: 1px solid purple;
     position: absolute;
+    
+   width: 90%;
+
+    border: 3px solid purple;
+   
     top: 20%;
+    left: 50%;
+    transform: translateX(-50%) ;
     height: 400px;
 }
 .student-item>h1.student{
+    border: 3px solid blue;
+   
+    width: 100%;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%) ;
     font-size: 20px;
     text-align: center;
     margin-top: 9%;
@@ -768,6 +787,7 @@ section.reviews{
     padding: 0 15px;
     width: 240px;
     height: 56px;
+    
     font-size: 18px;
     color: #fff;
     background-image:linear-gradient(270deg,#64d4b8,#17ad99);

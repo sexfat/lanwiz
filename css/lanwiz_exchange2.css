@@ -10,6 +10,7 @@ body{
 }
 /* page1:  */
 .exchange_bar{
+
     position: fixed;
     top: 0;
     width: 100%;
@@ -229,14 +230,16 @@ body{
    */
 
    .search-results{
-    position: relative;
+   
+    /* position: relative; */
     z-index: -100;
     width: 100%;
-    margin-top: 11%;
+    /* margin-top: 11%; */
     margin-bottom: 20px;
     border: 1px solid orange;
   }
   .search-results>span{
+    font-size: 20px;
     display: block;
     border: 1px solid blue;
     text-align: center;
