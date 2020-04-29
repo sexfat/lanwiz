@@ -581,10 +581,9 @@
 }
 
 /* page4: review */
-@media (min-width: 1200px){
+/* @media (min-width: 1200px){
     section.reviews{
         width: 100%;
-        /* height: 700px; */
         border: 1px solid red;
     }
     .review-container>h1{
@@ -604,7 +603,6 @@
     .student-item{
         border: 1px solid green;
         position: relative;
-        
         margin: 1% 1.5% 1%;
        display: flex;
         width: 33.3333333333%;
@@ -616,11 +614,8 @@
     }
     .student-item>.details{
         position: absolute;
-        
        width: 90%;
-    
         border: 3px solid purple;
-       
         top: 20%;
         left: 50%;
         transform: translateX(-50%) ;
@@ -628,7 +623,6 @@
     }
     .student-item>h1.student{
         border: 3px solid blue;
-       
         width: 100%;
         position: absolute;
         left: 50%;
@@ -638,10 +632,9 @@
         margin-top: 9%;
     }
     .details>div.name{
-        /* position: relative; */
-        /* margin: 20px 0;    */
+    
         height: 30px;
-        /* border: 1px solid blue; */
+
         margin: 20px;
         font-size: 16px;
         color: #777;
@@ -662,9 +655,7 @@
         height: 60px;
         width: 60px;
         border-radius: 50%;
-    
     }
-    
     .good-reviews>h1{
       text-align: center;
       margin: 10px auto 50px;
@@ -673,7 +664,7 @@
 @media (min-width: 800px) and  (max-width: 1199px){
     section.reviews{
         width: 100%;
-        /* height: 700px; */
+
         border: 1px solid red;
     }
     .review-container>h1{
@@ -724,10 +715,9 @@
         margin-top: 9%;
     }
     .details>div.name{
-        /* position: relative; */
-        /* margin: 20px 0;    */
+
         height: 30px;
-        /* border: 1px solid blue; */
+
         margin: 16px;
         font-size: 14px;
         color: #777;
@@ -759,7 +749,7 @@
     @media (min-width: 632px) and  (max-width: 799px){
         section.reviews{
             width: 100%;
-            /* height: 700px; */
+  
             border: 1px solid red;
         }
         .review-container>h1{
@@ -810,10 +800,9 @@
             margin-top: 9%;
         }
         .details>div.name{
-            /* position: relative; */
-            /* margin: 20px 0;    */
+
             height: 30px;
-            /* border: 1px solid blue; */
+      
             margin: 10px;
             font-size: 10px;
             color: #777;
@@ -895,8 +884,7 @@
             margin-top: 6%;
         }
         .details>div.name{
-            /* position: relative; */
-            /* margin: 20px 0;    */
+       
             height: 30px;
             border: 1px solid blue;
             margin: 10px;
@@ -922,7 +910,7 @@
         
         }
         
-    }
+    } */
     
     /* bottom-banner */
 

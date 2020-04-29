@@ -648,13 +648,11 @@ a {
 
 
 /* page4 reviews */
-
-section.reviews{
-    width: 100%;
-    /* height: 700px; */
-    border: 1px solid red;
+.container{
+    margin: 50px auto 50px auto;
+    width: 80%;
 }
-.review-container>h1{
+.container>h1{
     border: 1px solid blue;
     margin: 30px 0;
     font-size: 40px;
@@ -662,83 +660,111 @@ section.reviews{
     color: #414042;
     font-weight: 300;
 }
-.review-container>div.student-carousel{
-    margin: 0 auto;
-    width: 80%;
-    border: 1px solid orange;
-    display: flex;
-}
-.student-item{
-    border: 1px solid green;
+    .testimonial{
+    margin: 0 20px 40px;
+    }
+    .testimonial .testimonial-content{
+    padding: 35px 25px 35px 50px;
+    border: 1px solid rgb(156, 156, 156);
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background: #fff;
     position: relative;
-    
-    margin: 1% 1.5% 1%;
-   display: flex;
-    width: 33.3333333333%;
-    min-height: 400px;
-    height: auto;
-    border-radius: 6px;
-    box-shadow: 0 5px 20px 0 rgba(0,0,0,.1);
-    overflow: hidden;
-}
-.student-item>.details{
+    }
+    .testimonial .testimonial-content:before{
+    content: "";
     position: absolute;
-    
-   width: 90%;
-
-    border: 3px solid purple;
-   
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%) ;
-    height: 400px;
-}
-.student-item>h1.student{
-    border: 3px solid blue;
-   
-    width: 100%;
+    bottom: -30px;
+    left: 0;
+    border-top: 15px solid #718076;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    }
+    .testimonial .testimonial-content:after{
+    content: "";
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%) ;
-    font-size: 20px;
+    bottom: -30px;
+    right: 0;
+    border-top: 15px solid #718076;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    }
+    .testimonial-content .testimonial-icon{
+    width: 50px;
+    height: 45px;
+    background: rgb(87, 201, 209);
     text-align: center;
-    margin-top: 9%;
-}
-.details>div.name{
-    /* position: relative; */
-    /* margin: 20px 0;    */
-    height: 30px;
-    /* border: 1px solid blue; */
-    margin: 20px;
-    font-size: 16px;
-    color: #777;
-}
-.details>div p{
-    margin: 20px;
-    font-size: 16px;
-    color: #777;
-}
-.student-img{
+    font-size: 22px;
+    color: #fff;
+    line-height: 42px;
     position: absolute;
-    border: 1px solid yellow;
-   right:0px;
-    top: 10px;
-}
-.student-img img{
-    border: 1px solid red;
-    height: 60px;
-    width: 60px;
+    top: 37px;
+    left: -19px;
+    }
+    .testimonial-content .testimonial-icon:before{
+    content: "";
+    border-bottom: 16px solid rgb(87, 201, 209);
+    border-left: 18px solid transparent;
+    position: absolute;
+    top: -16px;
+    left: 1px;
+    }
+    .testimonial .description{
+    font-size: 15px;
+    font-style: italic;
+    color: #8a8a8a;
+    line-height: 23px;
+    margin: 0;
+    }
+    .testimonial .title{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #525252;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+    }
+    .testimonial .post{
+    display:  block;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(87, 201, 209);
+    }
+
+    .student-img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+
+    }
+    .owl-carousel .owl-item img {
     border-radius: 50%;
+    width: 100%;
+    }
+    .owl-theme .owl-controls{
+    margin-top: 20px;
+    }
+    .owl-theme .owl-controls .owl-page span{
+    background: #ccc;
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+    }
+    .owl-theme .owl-controls .owl-page.active span,
+    .owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: rgb(87, 201, 209);
+    }
 
-}
-
-.good-reviews>h1{
-  text-align: center;
-  margin: 10px auto 50px;
-}
-
-
-
+    .good-reviews>h1{
+        color: #414042;
+        text-align: center;
+        margin: 35px auto 80px;
+        font-size: 30px;
+        font-weight: 300;
+      }
+      
+   
 /* bottom-banner */
 
 

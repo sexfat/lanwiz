@@ -1,61 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Lanwiz-Discussion</title>
-    <link rel="stylesheet" href="./css/lanwiz_discussion.css">
+    <title>Lanwiz-Exchange</title>
+    <link rel="stylesheet" href="./css/lanwiz_discussion2.css">
     <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/discussion_rwd.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./css/discussion2_rwd.css">
 
   </head>
+
   <body>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      $(function(){
+        AOS.init();
+        });
+    </script>
+    <script src="./bootstrap/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap/popper/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
 
-  <div class="exchange_bar">
-    <!-- below is top header (logo, navlist-left, and navlist-right) -->
-    <nav class="menu">
-        <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
-        <div class="menu-logo"><img class="menu-logo" src="./picture/logo-green-border.png"></div>
-        <div class="language-switch">
-          <h1>English</h1>
-          <span class="triangle1"></span>
-        </div>
-        
-        <ul id="menuUl" class="active">
-          <li><a>Log in</a></li>
-            <li><a href="./lanwiz_about.html" class="link_style">About Us</a></li>
-           <li> <a href="./lanwiz_blog.html" class="link_style">Blog</a></li>
-          <li><a href="./lanwiz_discussion.html" class="link_style">Discussion</a></li>
-            <li class="current-active"><a href="./lanwiz_exchange2.html" class="link_style">Find a Partner</a></li>
-        </ul>
-    </nav>
-    <nav class="menu2">
-        <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
-      
-        <ul id="menuUl" class="active">
-          <li><a>Speciaty</a></li>
-            <li><a href="./lanwiz_about.html" class="link_style">Also Speaks</a></li>
-           <li> <a href="./lanwiz_blog.html" class="link_style">From</a></li>
-
-        </ul>
-        <div class="search-partner-input">
-          <div class="search-partner-input-btn">
-            <img src="./picture/icon/search.png" alt="search icon">
-          </div>
-            <input id="search-partner-skills" placeholder="Name or Keywords..." value>
-        </div>
   
-    </nav>
-    
+    <div class="exchange_bar">
+        <!-- below is top header (logo, navlist-left, and navlist-right) -->
+        <nav class="menu">
+            <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
+            <div class="menu-logo"><img class="menu-logo" src="./picture/logo-green-border.png"></div>
+            <div class="language-switch">
+              <h1>English</h1>
+              <span class="triangle1"></span>
+            </div>
+            
+            <ul id="menuUl" class="active">
+              <li><a>Log in</a></li>
+                <li><a href="./lanwiz_about.html" class="link_style">About Us</a></li>
+               <li> <a href="./lanwiz_blog.html" class="link_style">Blog</a></li>
+              <li><a href="./lanwiz_discussion.html" class="link_style">Discussion</a></li>
+                <li class="current-active"><a href="./lanwiz_exchange.html" class="link_style">Find a Partner</a></li>
+            </ul>
+        </nav>
+        <nav class="menu2">
+            <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
+          
+            <ul id="menuUl" class="active">
+              <li><a>Speciaty</a></li>
+                <li><a href="./lanwiz_about.html" class="link_style">Also Speaks</a></li>
+               <li> <a href="./lanwiz_blog.html" class="link_style">From</a></li>
 
-    <script src="./js/lanwiz_discussion.js"></script>
+            </ul>
+            <div class="search-partner-input">
+              <div class="search-partner-input-btn">
+                <img src="./picture/icon/search.png" alt="search icon">
+              </div>
+                <input id="search-partner-skills" placeholder="Name or Keywords..." value>
+            </div>
+        </nav>
 
-</div>
+
+        <script src="./js/lanwiz_exchange2.js"></script>
+
+    </div>
 
 
-  <!-- below is content -->
 
+    <!-- search outcome -->
 
     <div class="partner-card-container">
       
@@ -290,7 +301,8 @@
           <li><a href="#">&gt;</a></li>
         </ul>
       </div>
-      <section class="wrapper-style">
+<!-- footer -->
+    <section class="wrapper-style">
         <div class="foot">
             <h1 class="foot1">Learn More than Just a Language.</h1>
             <p class="foot2">On Lanwiz it’s about mastering a timeless skill, cultivating new perspectives, and connecting with fascinating people from around the world.</p>
