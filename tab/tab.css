@@ -1,0 +1,16 @@
+.section{
+    border: 1px solid red;
+   width: 40%;
+   padding: 25px;
+    /* margin-top: 140px; */
+  }
+  .container{
+    
+    border: 1px solid green;
+  }
+  
+  .tabs>ul>li{
+     border: 1px solid blue;
+ 
+   
+  }

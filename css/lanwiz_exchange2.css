@@ -384,33 +384,38 @@ body{
     height: 22px; */
     background: url(./picture/icon/meg-icon2.png) no-repeat 50%/18px 18px;
   }
-  
-  /* .partner-card-tab-head {
-    border: 1px solid red;
-    display: flex;
-  margin-bottom: 15px;
-    justify-content: center;
-  } */
-  .partner-card-tabs {
+
+
+/* tab */
+  section.section{
+    /* border: 1px solid red; */
+   width: 40%;
+   padding: 25px;
+    /* margin-top: 140px; */
+  }
+  .container{
+    /* border: 1px solid green; */
+  }
+
+  .tabs>ul>li{
+     /* border: 1px solid blue; */
+
+  }
+
+
+  /* .partner-card-tabs {
     display: flex;
     margin-left: 50%;
     transform: translateX(-50%);
     width:100px;
-    /* border: 1px solid blue; */
     
-    
-  
-    /* justify-items: center; */
-    
-  
   }
   .partner-card-tab {
     margin: 0 28px 10px 0;
     cursor: pointer;
   }
   .partner-card-tab p{
-    /* border: 1px solid green; */
-    justify-content: center;
+   
     display: flex;
     
     padding-bottom: 10px;
@@ -418,38 +423,31 @@ body{
   .partner-card-tab>p>span.video{
     border-bottom: 2px solid #64d4b8;
   }
-  
+   */
   
   .video-player {
-    /* position: relative; */
+
     display: flex;
     margin-left: 50%;
     transform: translateX(-50%);
-    height: 150px;
+    height: 200px;
     
     border: 1px solid rgb(167, 166, 166);
   
     top: 70px;
     
-    width: 250px;
+    width: 300px;
     border-radius: 6px;
     overflow: hidden;
   }
-  /* .iframe-video {
-    position: absolute;
-    top: 90px;
-    right: 54px;
-    width: 280px;
-    border-radius: 6px;
-    overflow: hidden;
-  } */
+
   
   .video-player img {
     
     width: 120%;
    
     vertical-align: middle;
-    /* border: 1px solid green; */
+
   }
   
   .show-more-container{
@@ -596,7 +594,7 @@ body{
     align-items: flex-end;
 }
 .footer-icon img{
-    padding-right: 14px;
+    margin-right: 14px;
 
 }
 

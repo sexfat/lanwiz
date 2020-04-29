@@ -4,21 +4,17 @@
     <meta charset="utf-8">
     <title>Lanwiz-Exchange</title>
     <link rel="stylesheet" href="./css/lanwiz_exchange2.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script src="https://kit.fontawesome.com/808e969dcf.js"
+    crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="./css/exchange2_rwd.css">
 
   </head>
 
   <body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-      $(function(){
-        AOS.init();
-        });
-    </script>
     <script src="./bootstrap/jquery/jquery-3.4.1.min.js"></script>
     <script src="./bootstrap/popper/popper.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
@@ -117,25 +113,54 @@
 
         </div>
 
-        <div class="cards-right">
-            <div class="partner-card-tabs">
-              <div class="partner-card-tab">
-                <p>
-                  <span class="video">Video</span>
-                </p>
+        <section class="section">
+          <div class="container">
+    
+            <div class="tabs is-boxed">
+              <ul id="ul">
+    
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="fas fa-film"
+                        aria-hidden="true"></i></span>
+                    <span>Videos</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="far fa-file-alt"
+                        aria-hidden="true"></i></span>
+                    <span>Introduction</span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+    
+            <div class="tabContainer" id="videos">
+              <div class = "has-text-centered">
+                <video class="video-player" controls="controls" controls="controls">
+                  <source src="/video/partners_search.mp4" type="video/ogg" />
+                  <source src="/i/movie.mp4" type="video/mp4" />
+                </video>
               </div>
-              <div class="partner-card-tab">
-                <p>
-                  <span>Intro</span>
-                </p>
+          
+            </div>
+    
+            <div class="tabContainer" id="documents">
+              <div class = "has-text-centered">
+                
               </div>
-          </div>
-          <div class="video-player">
-            <img src="./picture/video/6.jpg" alt="poster">
-          </div>
-        </div>
-      </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                sed ullamcorper tellus, nec consectetur sem. Sed interdum nunc in
+                tincidunt gravida. Ut efficitur leo sem. Interdum et malesuada
+                fames ac ante ipsum primis in faucibus. </p>
+            </div>
 
+          </div>
+        </section>
+      </div>   
+     
       <div class="cards" id="partner1">
         <div class="cards-left">
           <div class="cards-left-detail">
@@ -178,24 +203,52 @@
           </div>  
         </div>
 
-        <div class="cards-right">
-          <div class="partner-card-tabs">
-            <div class="partner-card-tab">
-              <p>
-                <span class="video">Video</span>
-              </p>
+        <section class="section">
+          <div class="container">
+    
+            <div class="tabs is-boxed">
+              <ul id="ul">
+    
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="fas fa-film"
+                        aria-hidden="true"></i></span>
+                    <span>Videos</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="far fa-file-alt"
+                        aria-hidden="true"></i></span>
+                    <span>Introduction</span>
+                  </a>
+                </li>
+                
+              </ul>
             </div>
-            <div class="partner-card-tab">
-              <p>
-                <span>Intro</span>
-              </p>
+    
+            <div class="tabContainer" id="videos">
+              <div class = "has-text-centered">
+                <video class="video-player" controls="controls" controls="controls">
+                  <source src="/video/partners_search.mp4" type="video/ogg" />
+                  <source src="/i/movie.mp4" type="video/mp4" />
+                </video>
+              </div>
+          
             </div>
-            <div class="partner-card-tab-active"></div>
+    
+            <div class="tabContainer" id="documents">
+              <div class = "has-text-centered">
+                
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                sed ullamcorper tellus, nec consectetur sem. Sed interdum nunc in
+                tincidunt gravida. Ut efficitur leo sem. Interdum et malesuada
+                fames ac ante ipsum primis in faucibus. </p>
+            </div>
+
           </div>
-          <div class="video-player">
-            <img src="./picture/video/1.jpg" alt="poster">
-          </div>
-        </div>
+        </section>
       </div>
 
       <div class="cards" id="partner1">
@@ -239,24 +292,52 @@
           </div>  
         </div>
 
-        <div class="cards-right">
-            <div class="partner-card-tabs">
-              <div class="partner-card-tab">
-                <p>
-                  <span class="video">Video</span>
-                </p>
+        <section class="section">
+          <div class="container">
+    
+            <div class="tabs is-boxed">
+              <ul id="ul">
+    
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="fas fa-film"
+                        aria-hidden="true"></i></span>
+                    <span>Videos</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="far fa-file-alt"
+                        aria-hidden="true"></i></span>
+                    <span>Introduction</span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+    
+            <div class="tabContainer" id="videos">
+              <div class = "has-text-centered">
+                <video class="video-player" controls="controls" controls="controls">
+                  <source src="/video/partners_search.mp4" type="video/ogg" />
+                  <source src="/i/movie.mp4" type="video/mp4" />
+                </video>
               </div>
-              <div class="partner-card-tab">
-                <p>
-                  <span>Intro</span>
-                </p>
+          
+            </div>
+    
+            <div class="tabContainer" id="documents">
+              <div class = "has-text-centered">
+                
               </div>
-              <div class="partner-card-tab-active"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                sed ullamcorper tellus, nec consectetur sem. Sed interdum nunc in
+                tincidunt gravida. Ut efficitur leo sem. Interdum et malesuada
+                fames ac ante ipsum primis in faucibus. </p>
+            </div>
+
           </div>
-          <div class="video-player">
-            <img src="./picture/video/3.jpg" alt="poster">
-          </div>
-        </div>
+        </section>
       </div>
 
       <div class="cards" id="partner1">
@@ -300,24 +381,52 @@
           </div>  
         </div>
 
-        <div class="cards-right">
-            <div class="partner-card-tabs">
-              <div class="partner-card-tab">
-                <p>
-                  <span class="video">Video</span>
-                </p>
+        <section class="section">
+          <div class="container">
+    
+            <div class="tabs is-boxed">
+              <ul id="ul">
+    
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="fas fa-film"
+                        aria-hidden="true"></i></span>
+                    <span>Videos</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="far fa-file-alt"
+                        aria-hidden="true"></i></span>
+                    <span>Introduction</span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+    
+            <div class="tabContainer" id="videos">
+              <div class = "has-text-centered">
+                <video class="video-player" controls="controls" controls="controls">
+                  <source src="/video/partners_search.mp4" type="video/ogg" />
+                  <source src="/i/movie.mp4" type="video/mp4" />
+                </video>
               </div>
-              <div class="partner-card-tab">
-                <p>
-                  <span>Intro</span>
-                </p>
+          
+            </div>
+    
+            <div class="tabContainer" id="documents">
+              <div class = "has-text-centered">
+                
               </div>
-              <div class="partner-card-tab-active"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                sed ullamcorper tellus, nec consectetur sem. Sed interdum nunc in
+                tincidunt gravida. Ut efficitur leo sem. Interdum et malesuada
+                fames ac ante ipsum primis in faucibus. </p>
+            </div>
+
           </div>
-          <div class="video-player">
-            <img src="./picture/video/5.jpg" alt="poster">
-          </div>
-        </div>
+        </section>
       </div>
 
       <div class="cards" id="partner1">
@@ -361,24 +470,52 @@
           </div> 
         </div>
 
-        <div class="cards-right">
-            <div class="partner-card-tabs">
-              <div class="partner-card-tab">
-                <p>
-                  <span class="video">Video</span>
-                </p>
+        <section class="section">
+          <div class="container">
+    
+            <div class="tabs is-boxed">
+              <ul id="ul">
+    
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="fas fa-film"
+                        aria-hidden="true"></i></span>
+                    <span>Videos</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="far fa-file-alt"
+                        aria-hidden="true"></i></span>
+                    <span>Introduction</span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+    
+            <div class="tabContainer" id="videos">
+              <div class = "has-text-centered">
+                <video class="video-player" controls="controls" controls="controls">
+                  <source src="/video/partners_search.mp4" type="video/ogg" />
+                  <source src="/i/movie.mp4" type="video/mp4" />
+                </video>
               </div>
-              <div class="partner-card-tab">
-                <p>
-                  <span>Intro</span>
-                </p>
+          
+            </div>
+    
+            <div class="tabContainer" id="documents">
+              <div class = "has-text-centered">
+                
               </div>
-              <div class="./picture/video/1.jpg"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                sed ullamcorper tellus, nec consectetur sem. Sed interdum nunc in
+                tincidunt gravida. Ut efficitur leo sem. Interdum et malesuada
+                fames ac ante ipsum primis in faucibus. </p>
+            </div>
+
           </div>
-          <div class="video-player">
-            <img src="./picture/video/2.jpg" alt="poster">
-          </div>
-        </div>
+        </section>
       </div>
 
       <div class="cards" id="partner1">
@@ -421,26 +558,61 @@
 
           </div>  
         </div>
-        <div class="cards-right">
-            <div class="partner-card-tabs">
-              <div class="partner-card-tab">
-                <p>
-                  <span class="video">Video</span>
-                </p>
+        <section class="section">
+          <div class="container">
+    
+            <div class="tabs is-boxed">
+              <ul id="ul">
+    
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="fas fa-film"
+                        aria-hidden="true"></i></span>
+                    <span>Videos</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="far fa-file-alt"
+                        aria-hidden="true"></i></span>
+                    <span>Introduction</span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+    
+            <div class="tabContainer" id="videos">
+              <div class = "has-text-centered">
+                <video class="video-player" controls="controls" controls="controls">
+                  <source src="/video/partners_search.mp4" type="video/ogg" />
+                  <source src="/i/movie.mp4" type="video/mp4" />
+                </video>
               </div>
-              <div class="partner-card-tab">
-                <p>
-                  <span>Intro</span>
-                </p>
+          
+            </div>
+    
+            <div class="tabContainer" id="documents">
+              <div class = "has-text-centered">
+                
               </div>
-              <div class="partner-card-tab-active"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                sed ullamcorper tellus, nec consectetur sem. Sed interdum nunc in
+                tincidunt gravida. Ut efficitur leo sem. Interdum et malesuada
+                fames ac ante ipsum primis in faucibus. </p>
+            </div>
+
           </div>
-          <div class="video-player">
-            <img src="./picture/video/4.jpg" alt="poster">
-          </div>
-        </div>
-      </div>
+        </section>
     </div>
+
+
+
+    <script src="./tab/tab.js"></script>
+
+
+
+
 
     <div class="show-more-container">
       <a href="#">
