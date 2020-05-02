@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- owl 需要這三隻檔案 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>OwlCarousel2 example</title>
+    <!-- 自己的樣式 -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        .wrapper ul {
+            list-style: none;
+        }
+
+        .wrapper ul li {
+            text-align: center;
+        }
+
+        /* 箭頭屬性 */
+        .nav-btn {
+            font-size: 32px;
+            position: absolute;
+            top: -14px;
+            cursor: pointer;
+        }
+
+        .nav-btn:hover {
+            color: rgb(138, 138, 138);
+        }
+
+        .prev-slide {
+            left: -66px;
+        }
+
+        .next-slide {
+            right: -66px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul class="owl-carousel owl-theme">
+            <li><a href="https://www.netflix.com/title/80098200">幽靈空間</a></li>
+            <li>末路</li>
+            <li>滅絕</li>
+            <li>V怪客</li>
+            <li>蒙上你的眼</li>
+            <li>普羅米修斯</li>
+            <li>鬼影特攻</li>
+            <li>愛 x 恨 x 機器人</li>
+        </ul>
+    </div>
+
+
+    <script>
+        //    寫在這裡
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                //所有參數的位置
+                //items: 6, //這個參數是要出現幾個
+                loop: true, //可以循環
+                nav: true, //能控制
+                dots: false, //不能有底下的點
+                navText: ["<div class='nav-btn prev-slide'>  左邊< </div>","<div class='nav-btn next-slide'> >右邊 </div>"], //把箭頭改成div
+                mouseDrag: false, //不能讓它拖拉，因為字就不能點擊了。
+                //   navClass: '[&#x27;owl-prev&#x27;,&#x27;owl-next&#x27;]'
+                //手機版
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: true,
+                    },
+                    600: {
+                        items: 3,
+                        nav: true
+                    },
+                    1000: {
+                        items: 7,
+                        nav: true
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
