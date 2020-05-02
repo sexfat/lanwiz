@@ -57,6 +57,7 @@
 
 <body>
     <div class="wrapper">
+        <!-- 一定要有這兩個 owl-carousel owl-theme -->
         <ul class="owl-carousel owl-theme">
             <li><a href="https://www.netflix.com/title/80098200">幽靈空間</a></li>
             <li>末路</li>
@@ -84,14 +85,17 @@
                 //   navClass: '[&#x27;owl-prev&#x27;,&#x27;owl-next&#x27;]'
                 //手機版
                 responsive: {
+                    //手機
                     0: {
                         items: 2,
                         nav: true,
                     },
+                    // 瀏覽器寬度600 ~ 1000
                     600: {
                         items: 3,
                         nav: true
                     },
+                     // 瀏覽器寬度1000 以上
                     1000: {
                         items: 7,
                         nav: true
